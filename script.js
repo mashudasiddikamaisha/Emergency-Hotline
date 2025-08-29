@@ -51,12 +51,12 @@ getElements("cards").addEventListener('click', function(e){
         let coinEl = getElements("count-coin")
         let crntCoin = parseInt(coinEl.innerText)
         if(crntCoin < 20) {
-            alert("❌ You don't have enough coins; you need at least 20 coins to make a call.")
+            alert("❌ You don't have enough coins. You need at least 20 coins to make a call.")
             return
         }
         crntCoin -= 20;
         coinEl.innerText = crntCoin
-        alert(`📞 calling ${cardSub} ${phoneNum}....`)
+        alert(`📞 Calling ${cardSub} ${phoneNum}....`)
         const data = {
             date: new Date().toLocaleTimeString()
         }
