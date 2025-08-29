@@ -64,12 +64,12 @@ getElements("cards").addEventListener('click', function(e){
         const container = getElements("new-container")
         const newContainer = document.createElement("div")
         newContainer.innerHTML = `
-         <div class="flex items-center justify-between shadow-sm bg-[var(--Surface,rgba(250,250,250,1))]  rounded-sm  mt-5">
+         <div class="flex items-center justify-between shadow-sm bg-gray-50  rounded-sm  mt-5">
                 <div>
-                    <p class="text-[var(--Dark, rgba(17, 17, 17, 1))] font-semibold p-3 pb-1">${cardTitle}</p>
+                    <p class="text-gray-900 font-semibold p-3 pb-1">${cardTitle}</p>
                     <p class="text-gray-400 font-bold p-3 pt-0">${phoneNum}</p>
                 </div>
-                <div class="pr-3 text-[var(--Dark, rgba(17, 17, 17, 1))] font-semibold ">
+                <div class="pr-3 text-gray-900 font-semibold ">
                     <p>${data.date}</p>
                 </div>
             </div>
